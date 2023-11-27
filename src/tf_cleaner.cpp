@@ -145,6 +145,7 @@ namespace tfCleaner{
     const std::vector<tf::Quaternion>& quaternions, 
     const std::vector<double>& weights)
     {
+        // Credit for this goes to https://github.com/BobMcFry/averaging_weighted_quaternions
         Eigen::MatrixXd Q = Eigen::MatrixXd::Zero(4, quaternions.size());
         Eigen::Vector3d vec;
         for (size_t i = 0; i < quaternions.size(); ++i)
