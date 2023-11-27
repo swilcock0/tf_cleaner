@@ -37,8 +37,8 @@ include_directories(
 ## Declare a C++ executable
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
-add_executable(tf_demo_trans tf_demo_trans.cpp
-  tf_cleaner.cpp
+add_executable(tf_demo_trans src/tf_demo_trans.cpp
+  src/tf_cleaner.cpp
 )
 
 ## Add cmake target dependencies of the executable
