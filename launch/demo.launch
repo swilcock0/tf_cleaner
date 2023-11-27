@@ -1,0 +1,5 @@
+<launch>
+    <node name="tf_demo" pkg="tf_cleaner" type="tf_demo_trans" />
+
+    <node type="rviz" name="rviz" pkg="rviz" args="-d $(find tf_cleaner)/rviz/view.rviz" />
+</launch>
